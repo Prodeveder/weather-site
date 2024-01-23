@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="container-wrapper">
         <ul class="random-cities">
-          <li>London</li>
-          <li>London</li>
-          <li>London</li>
-          <li>London</li>
-          <li>London</li>
+          <li class="randomCity">London</li>
+          <li class="randomCity">Londo</li>
+          <li class="randomCity">Londn</li>
+          <li class="randomCity">Lonon</li>
+          <li class="randomCity">Ldon</li>
         </ul>
 
         <div class="input-section">
@@ -34,7 +34,7 @@
 
           <input type="text" id="cityName" placeholder="search for city .." />
           <svg
-            onclick="searchCity()"
+            class="search"
             xmlns="http://www.w3.org/2000/svg"
             height="24"
             viewBox="0 -960 960 960"
@@ -47,7 +47,7 @@
         </div>
 
         <div class="weather-display">
-          <div class="city-dateNtime">
+          <!-- <div class="city-dateNtime">
             <span class="date">friday, 12 may 2023</span> |
             <span class="time">local time: 11:44 AM</span>
           </div>
@@ -167,8 +167,11 @@
                 low: 19&deg;
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
+
+
+
 		<div class="weather-forecast hourly">
 			<div class="forecast-header">
 				hourly forecast

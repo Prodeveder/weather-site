@@ -30,7 +30,7 @@ body {
 .container {
   width: 100%;
   max-width: 700px;
-  height: 100%;
+  height: 70%;
   margin: 10px 0px 0px 0px;
   background: linear-gradient(var(--main3), var(--main2), var(--main));
 
@@ -72,7 +72,7 @@ body {
 
 .random-cities li:hover {
   box-shadow: inset 0px -10px var(--accent);
-  color: var(--accent);
+  /* color: var(--accent); */
   transform: scale(1.2);
 }
 
@@ -199,7 +199,7 @@ body {
 
 /* summary Icon  */
 .summary img {
-  width: auto;
+  width: 7rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -298,6 +298,7 @@ body {
     padding: 10px 0px;
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .weather-forecast.Daliy {
@@ -403,4 +404,31 @@ body {
 .forecast-item .forecast-time span {
     color: var(--accent);
     font-weight: 400;
+}
+
+@media (max-width:650px) {
+  .random-cities li {
+    font-size: .9;
+  }
+  .random-cities li:nth-child(5) {
+    display: none;
+  }
+  .random-cities li:nth-child(4) {
+    display: none;
+  }
+
+  .weather-timestamp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .divider {
+    display: none;
+  }
+  .summary img {
+    width: 5rem;
+  }
+
+  .city-dateNtime{
+    font-size: .9rem;
+  }
 }
