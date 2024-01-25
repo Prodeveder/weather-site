@@ -431,4 +431,6 @@ body {
   .city-dateNtime{
     font-size: .9rem;
   }
+  .container-wrapper{
+    height: 100%;
 }
